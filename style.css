@@ -7,7 +7,8 @@ html{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-radius: 10px;
+    overflow: hidden;
+    transform: translateY(200px);
     
     
 }
@@ -19,14 +20,23 @@ html{
     justify-content: center;
     max-width: 300px;
     font-family: 'Montserrat', sans-serif;
+    border-radius:  0px 10px 10px 0px;
 }
 
 .main-img{
     max-width: 300px;
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
 }
 
 .copy-margin{
     margin-left: 35px;
+    margin-top: 10px;
+}
+
+.preheader{
+    margin-bottom: 5px;
+    color: grey;
 }
 
 .header{
@@ -35,10 +45,31 @@ html{
 
 .body-copy{
     margin-right: 25px;
+    color: grey;
+    line-height: 1.5rem;
+    font-size: 14px;
 }
 
 .prices-div{
     display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.price{
+    color: hsl(158, 36%, 37%) ;
+    font-size: 30px;
+
+}
+
+.ex-price{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
 }
 
 .add-btn{
@@ -46,4 +77,21 @@ html{
     color: white;
     padding: 15px;
     border-radius: 10px;
+    width: 80%;
+    margin-left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
+    
+}
+
+.svg{
+    margin-right: 20px;
+    transform: translateY(2px);
+}
+
+@media(max-width: 767px){
+    .card-wrapper{
+        flex-direction: column;
+    }
 }
